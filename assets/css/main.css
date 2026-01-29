@@ -1,3 +1,50 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* End CSS Reset */
 :root {
   --main-color: rgba(245, 56, 56, 1);
   --main-text-color: rgba(11, 19, 42, 1);
@@ -6,12 +53,18 @@
   --main-font-weight: 500;
   --aside-font-weight: 400;
   --extra-bold-font-weight: 700;
-  --hero-title-font-size: 50px;
-  --title-font-size: 35px;
-  --description-font-size: 16px;
-  --details-font-size: 14px;
-  --analytics-font-size1: 25px;
-  --analytics-font-size2: 20px;
-  --aside-title-font-size: 18px;
-  --defult-radius: 10px;
+  --hero-title-font-size: 5rem;
+  --title-font-size: 3.5rem;
+  --description-font-size: 1.6rem;
+  --details-font-size: 1.4rem;
+  --analytics-font-size1: 2.5rem;
+  --analytics-font-size2: 2rem;
+  --aside-title-font-size: 1.8rem;
+  --defult-radius: 1rem;
+  --special-radius: 5rem;
+}
+
+.test {
+  color: red;
+  font-size: 5rem;
 }/*# sourceMappingURL=main.css.map */
