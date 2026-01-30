@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
+
+  .logo-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &-name {
+      font-weight: var(--main-font-weight);
+      font-size: var(--analytics-font-size2);
+
+      &-vpn {
+        font-weight: var(--extra-bold-font-weight);
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    color: var(--text-color);
+    font-weight: var(--text-font-weight);
+  }
+
+  .sign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-shrink: 0;
+    font-weight: var(--main-font-weight);
+    font-size: var(--description-font-size);
+    text-transform: capitalize;
+
+    &-in {
+      color: var(--main-text-color);
+    }
+
+    &-up {
+      color: var(--main-color);
+      padding: 1.3rem 4.5rem;
+      border: 0.1rem solid var(--main-color);
+      border-radius: var(--special-radius);
+    }
+  }
+}

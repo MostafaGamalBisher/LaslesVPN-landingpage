@@ -27,18 +27,6 @@ ol {
   list-style: none;
 }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Rubik", sans-serif;
-  line-height: 1.3;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -62,4 +50,73 @@ a {
   --special-title-font-size: 1.8rem;
   --defult-radius: 1rem;
   --special-radius: 5rem;
+  --font-family: "Rubik";
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik";
+  line-height: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 15rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
+}
+.header .logo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.header .logo-content-name {
+  font-weight: var(--main-font-weight);
+  font-size: var(--analytics-font-size2);
+}
+.header .logo-content-name-vpn {
+  font-weight: var(--extra-bold-font-weight);
+}
+.header .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  color: var(--text-color);
+  font-weight: var(--text-font-weight);
+}
+.header .sign {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-shrink: 0;
+  font-weight: var(--main-font-weight);
+  font-size: var(--description-font-size);
+  text-transform: capitalize;
+}
+.header .sign-in {
+  color: var(--main-text-color);
+}
+.header .sign-up {
+  color: var(--main-color);
+  padding: 1.3rem 4.5rem;
+  border: 0.1rem solid var(--main-color);
+  border-radius: var(--special-radius);
 }/*# sourceMappingURL=main.css.map */
