@@ -48,10 +48,10 @@ a {
 :root {
   --main-color: rgba(245, 56, 56, 1);
   --main-text-color: rgba(11, 19, 42, 1);
-  --aside-text-color: rgba(79, 86, 101, 1);
+  --text-color: rgba(79, 86, 101, 1);
   --active-button-text-color: rgba(255, 255, 255, 1);
   --main-font-weight: 500;
-  --aside-font-weight: 400;
+  --text-font-weight: 400;
   --extra-bold-font-weight: 700;
   --hero-title-font-size: 5rem;
   --title-font-size: 3.5rem;
@@ -59,12 +59,7 @@ a {
   --details-font-size: 1.4rem;
   --analytics-font-size1: 2.5rem;
   --analytics-font-size2: 2rem;
-  --aside-title-font-size: 1.8rem;
+  --special-title-font-size: 1.8rem;
   --defult-radius: 1rem;
   --special-radius: 5rem;
-}
-
-.test {
-  color: red;
-  font-size: 5rem;
 }/*# sourceMappingURL=main.css.map */
