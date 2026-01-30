@@ -1,0 +1,27 @@
+.about {
+  gap: 4rem;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    align-items: flex-start;
+  }
+
+  &-image-content {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+}
+.hero-title {
+  font-size: var(--hero-title-font-size);
+  font-weight: var(--main-font-weight);
+  color: var(--main-text-color);
+  line-height: 7rem;
+
+  &-laslesvpn {
+    font-weight: var(--extra-bold-font-weight);
+  }
+}
