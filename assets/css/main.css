@@ -45,8 +45,8 @@ a {
   --title-font-size: 3.5rem;
   --description-font-size: 1.6rem;
   --details-font-size: 1.4rem;
-  --analytics-font-size1: 2.5rem;
-  --analytics-font-size2: 2rem;
+  --statistics-font-size1: 2.5rem;
+  --statistics-font-size2: 2rem;
   --special-title-font-size: 1.8rem;
   --defult-radius: 1rem;
   --special-radius: 5rem;
@@ -63,6 +63,7 @@ body {
   font-size: 1.6rem;
   font-family: "Rubik";
   line-height: 100%;
+  color: var(--main-text-color);
 }
 
 .container {
@@ -70,15 +71,13 @@ body {
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
-  align-items: flex-start;
   max-width: 1440px;
 }
 
 .section {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   align-items: center;
-  padding: 5rem 15rem;
+  margin: 5rem 15rem;
 }
 
 .description {
@@ -93,11 +92,12 @@ body {
 }
 
 .image {
-  max-width: 100%;
+  width: 100%;
 }
 
 .button {
-  padding: 1.75rem 7.5rem;
+  position: relative;
+  padding: 1.75rem 7.75rem;
   border-radius: var(--defult-radius);
   background-color: var(--main-color);
   color: var(--bold-button-text-color);
@@ -105,14 +105,28 @@ body {
   font-size: var(--description-font-size);
   margin-top: 3rem;
   line-height: 2.5rem;
-  box-shadow: 0px 20px 20px 0px rgba(245, 56, 56, 0.35);
+}
+
+.button::after {
+  position: absolute;
+  content: "";
+  top: 52%;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 21.183rem;
+  height: 6rem;
+  background-color: rgba(245, 56, 56, 0.35);
+  border-radius: 1rem;
+  filter: blur(2.5rem);
+  z-index: -1;
 }
 
 .header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 15rem;
-  padding: 5rem 15rem;
+  margin: 5rem 15rem;
 }
 .header .logo-content {
   display: flex;
@@ -158,19 +172,20 @@ body {
 }
 
 .about {
-  gap: 4rem;
+  gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 .about-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  flex: 1;
   align-items: flex-start;
+  min-width: 540px;
+  flex: 1;
 }
 .about-image-content {
   display: flex;
-  flex: 1;
-  justify-content: center;
+  flex-shrink: 0;
 }
 
 .hero-title {
@@ -181,4 +196,38 @@ body {
 }
 .hero-title-laslesvpn {
   font-weight: var(--extra-bold-font-weight);
+}
+
+.Statistics {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7.25rem 9.1rem;
+  border-radius: var(--defult-radius);
+  box-shadow: 0 0 3px rgb(34, 32, 32);
+}
+.Statistics-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.65rem;
+}
+.Statistics-column-icon {
+  width: 100%;
+}
+.Statistics-column-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Statistics-column-content-numbers {
+  font-weight: var(--extra-bold-font-weight);
+  font-size: var(--statistics-font-size1);
+  line-height: 3rem;
+}
+.Statistics-column-content-numbers-name {
+  font-weight: var(--text-font-weight);
+  font-size: var(--statistics-font-size2);
+  color: var(--text-color);
 }/*# sourceMappingURL=main.css.map */
