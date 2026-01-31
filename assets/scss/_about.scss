@@ -7,20 +7,13 @@
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
-    min-width: 550px;
+    min-width: 55rem;
   }
 
   &-image-content {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    .image {
-      width: 100%;
-      height: auto;
-      min-width: 611px;
-      object-fit: contain;
-    }
   }
 }
 .hero-title {
@@ -55,6 +48,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 3.65rem;
+    position: relative;
 
     &-icon {
       width: 100%;
@@ -74,8 +68,29 @@
           font-weight: var(--text-font-weight);
           font-size: var(--statistics-font-size2);
           color: var(--text-color);
+          text-transform: capitalize;
         }
       }
     }
   }
+}
+
+.Statistics-column:nth-child(2):before,
+.Statistics-column:nth-child(2):after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.2rem;
+  height: 12.557rem;
+  background-color: rgba(238, 239, 242, 1);
+  border-radius: var(--defult-radius);
+}
+
+.Statistics-column:nth-child(2)::before {
+  left: -113px;
+}
+
+.Statistics-column:nth-child(2)::after {
+  right: -134.5px;
 }

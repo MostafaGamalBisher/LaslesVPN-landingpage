@@ -17,14 +17,13 @@ body {
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
-  // align-items: flex-start;
-  max-width: 1440px;
+  max-width: 1320px;
 }
 
 .section {
   display: grid;
   align-items: center;
-  margin: 5rem 15rem;
+  margin: 5rem 5rem;
 }
 
 .description {
@@ -39,10 +38,7 @@ body {
 }
 
 .image {
-  // max-width: 100%;
-  // max-height: auto;
-  // max-width: 612px;
-  // display: block;
+  min-width: 100%;
 }
 
 .button {

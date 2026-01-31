@@ -72,13 +72,13 @@ body {
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
-  max-width: 1440px;
+  max-width: 1320px;
 }
 
 .section {
   display: grid;
   align-items: center;
-  margin: 5rem 15rem;
+  margin: 5rem 5rem;
 }
 
 .description {
@@ -90,6 +90,10 @@ body {
 
 .laslessvpn {
   font-weight: var(--main-font-weight);
+}
+
+.image {
+  min-width: 100%;
 }
 
 .button {
@@ -177,19 +181,12 @@ body {
   flex-direction: column;
   gap: 2rem;
   align-items: flex-start;
-  min-width: 550px;
+  min-width: 55rem;
 }
 .about-image-content {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.about-image-content .image {
-  width: 100%;
-  height: auto;
-  min-width: 611px;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .hero-title {
@@ -223,6 +220,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 3.65rem;
+  position: relative;
 }
 .Statistics-column-icon {
   width: 100%;
@@ -241,4 +239,25 @@ body {
   font-weight: var(--text-font-weight);
   font-size: var(--statistics-font-size2);
   color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.Statistics-column:nth-child(2):before,
+.Statistics-column:nth-child(2):after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.2rem;
+  height: 12.557rem;
+  background-color: rgb(238, 239, 242);
+  border-radius: var(--defult-radius);
+}
+
+.Statistics-column:nth-child(2)::before {
+  left: -113px;
+}
+
+.Statistics-column:nth-child(2)::after {
+  right: -134.5px;
 }/*# sourceMappingURL=main.css.map */
