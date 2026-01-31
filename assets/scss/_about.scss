@@ -1,6 +1,6 @@
 .about {
   gap: 5rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr auto;
 
   &-content {
     display: flex;
@@ -12,8 +12,8 @@
   }
 
   &-image-content {
-    display: flex;
-    flex-shrink: 0;
+    max-width: 612px;
+    // display: block;
   }
 }
 .hero-title {
@@ -27,17 +27,21 @@
   }
 }
 
-.Statistics {
+.statistics-container {
   grid-column: 1/-1;
-  display: flex;
+  justify-self: start;
+  margin-top: 5rem;
+}
 
-  justify-content: space-between;
+.Statistics {
+  position: relative;
+  display: flex;
   align-items: center;
   padding: 7.25rem 9.1rem;
   border-radius: var(--defult-radius);
-  box-shadow: 0 0 3px rgb(34, 32, 32);
-  // width: 1140px;
-  // height: 200px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 48px 178px -95px rgba(13, 16, 37, 1);
+  gap: 240px;
 
   &-column {
     display: flex;

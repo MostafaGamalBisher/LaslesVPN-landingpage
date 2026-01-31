@@ -64,6 +64,7 @@ body {
   font-family: "Rubik";
   line-height: 100%;
   color: var(--main-text-color);
+  background-color: rgb(255, 255, 255);
 }
 
 .container {
@@ -89,10 +90,6 @@ body {
 
 .laslessvpn {
   font-weight: var(--main-font-weight);
-}
-
-.image {
-  width: 100%;
 }
 
 .button {
@@ -173,7 +170,7 @@ body {
 
 .about {
   gap: 5rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr auto;
 }
 .about-content {
   display: flex;
@@ -184,8 +181,7 @@ body {
   flex: 1;
 }
 .about-image-content {
-  display: flex;
-  flex-shrink: 0;
+  max-width: 612px;
 }
 
 .hero-title {
@@ -198,14 +194,21 @@ body {
   font-weight: var(--extra-bold-font-weight);
 }
 
-.Statistics {
+.statistics-container {
   grid-column: 1/-1;
+  justify-self: start;
+  margin-top: 5rem;
+}
+
+.Statistics {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 7.25rem 9.1rem;
   border-radius: var(--defult-radius);
-  box-shadow: 0 0 3px rgb(34, 32, 32);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 48px 178px -95px rgb(13, 16, 37);
+  gap: 240px;
 }
 .Statistics-column {
   display: flex;
