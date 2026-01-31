@@ -7,14 +7,13 @@
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
-    min-width: 55rem;
   }
 
-  &-image-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  // &-image-content {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
 }
 .hero-title {
   font-size: var(--hero-title-font-size);

@@ -122,6 +122,15 @@ body {
   z-index: -1;
 }
 
+.title {
+  font-size: var(--title-font-size);
+  font-weight: var(--main-font-weight);
+  line-height: 5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -181,12 +190,6 @@ body {
   flex-direction: column;
   gap: 2rem;
   align-items: flex-start;
-  min-width: 55rem;
-}
-.about-image-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero-title {
@@ -260,4 +263,31 @@ body {
 
 .Statistics-column:nth-child(2)::after {
   right: -13.45rem;
+}
+
+.features {
+  grid-template-columns: 60% 40%;
+  align-items: end;
+}
+.features-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.features-list-element {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--details-font-size);
+  font-weight: var(--text-font-weight);
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
