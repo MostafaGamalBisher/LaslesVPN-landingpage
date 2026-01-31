@@ -40,8 +40,8 @@
   padding: 7.25rem 9.1rem;
   border-radius: var(--defult-radius);
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 48px 178px -95px rgba(13, 16, 37, 1);
-  gap: 240px;
+  box-shadow: 0 4.8rem 17.8rem -9.5rem rgba(13, 16, 37, 1);
+  gap: 24rem;
 
   &-column {
     display: flex;
@@ -88,9 +88,9 @@
 }
 
 .Statistics-column:nth-child(2)::before {
-  left: -113px;
+  left: -11.3rem;
 }
 
 .Statistics-column:nth-child(2)::after {
-  right: -134.5px;
+  right: -13.45rem;
 }
