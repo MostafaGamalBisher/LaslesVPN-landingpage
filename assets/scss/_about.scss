@@ -1,19 +1,26 @@
 .about {
   gap: 5rem;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: repeat(2, 1fr);
 
   &-content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
-    min-width: 540px;
-    flex: 1;
+    min-width: 550px;
   }
 
   &-image-content {
-    max-width: 612px;
-    // display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image {
+      width: 100%;
+      height: auto;
+      min-width: 611px;
+      object-fit: contain;
+    }
   }
 }
 .hero-title {

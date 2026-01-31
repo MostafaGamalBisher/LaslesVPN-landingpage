@@ -170,18 +170,26 @@ body {
 
 .about {
   gap: 5rem;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: repeat(2, 1fr);
 }
 .about-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: flex-start;
-  min-width: 540px;
-  flex: 1;
+  min-width: 550px;
 }
 .about-image-content {
-  max-width: 612px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-image-content .image {
+  width: 100%;
+  height: auto;
+  min-width: 611px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .hero-title {
