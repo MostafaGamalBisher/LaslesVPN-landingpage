@@ -1,0 +1,42 @@
+.pricing {
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+
+  &-content {
+    text-align: center;
+  }
+
+  &-plans {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+
+    &-plan {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      padding: 5rem 6.763rem;
+      border: 0.2rem solid rgba(221, 221, 221, 1);
+      border-radius: var(--defult-radius);
+
+      &-selection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        &-button {
+          color: var(--main-color);
+          padding: 1.3rem 6.294rem;
+          border: 0.2rem solid var(--main-color);
+          border-radius: var(--special-radius);
+          font-weight: var(--extra-bold-font-weight);
+          line-height: 100%;
+          font-size: var(--description-font-size);
+        }
+      }
+    }
+  }
+}
