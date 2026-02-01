@@ -132,6 +132,22 @@ body {
   display: block;
 }
 
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.list-element {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--details-font-size);
+  font-weight: var(--text-font-weight);
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -276,19 +292,4 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-}
-.features-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-}
-.features-list-element {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: var(--details-font-size);
-  font-weight: var(--text-font-weight);
-  line-height: 3rem;
-  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

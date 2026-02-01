@@ -15,23 +15,4 @@
     // text-align: start;
     gap: 2rem;
   }
-
-  &-list {
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    // text-align: center;
-
-    &-element {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      font-size: var(--details-font-size);
-      font-weight: var(--text-font-weight);
-      line-height: 3rem;
-      margin-bottom: 0.5rem;
-    }
-  }
 }
