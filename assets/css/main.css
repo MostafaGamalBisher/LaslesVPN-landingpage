@@ -127,8 +127,9 @@ body {
   font-weight: var(--main-font-weight);
   line-height: 5rem;
   margin-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
+}
+.title span {
+  display: block;
 }
 
 .header {
