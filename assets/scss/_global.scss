@@ -32,10 +32,6 @@ body {
   color: var(--text-color);
   line-height: 3rem;
   margin-top: 2rem;
-
-  span {
-    display: block;
-  }
 }
 
 .block {
@@ -84,10 +80,6 @@ body {
   // display: flex;
   // flex-direction: column;
   display: block;
-
-  span {
-    display: block;
-  }
 }
 
 .list {

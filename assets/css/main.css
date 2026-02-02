@@ -88,9 +88,6 @@ body {
   line-height: 3rem;
   margin-top: 2rem;
 }
-.description span {
-  display: block;
-}
 
 .block {
   display: block;
@@ -135,9 +132,6 @@ body {
   font-weight: var(--main-font-weight);
   line-height: 5rem;
   margin-bottom: 0.5rem;
-  display: block;
-}
-.title span {
   display: block;
 }
 
