@@ -1,6 +1,8 @@
 .pricing {
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
+  gap: 6rem;
+  background: linear-gradient(rgba(248, 248, 248, 1), rgba(248, 248, 248, 0));
 
   &-content {
     text-align: center;
@@ -28,6 +30,18 @@
         align-items: center;
         gap: 2rem;
         margin-top: auto;
+
+        span {
+          font-weight: var(--main-font-weight);
+          font-size: var(--statistics-font-size1);
+          line-height: 3rem;
+          margin-bottom: 0.5rem;
+
+          span {
+            font-weight: var(--text-font-weight);
+            color: var(--text-color);
+          }
+        }
 
         &-button {
           color: var(--main-color);

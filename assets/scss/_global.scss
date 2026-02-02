@@ -23,7 +23,7 @@ body {
 .section {
   display: grid;
   align-items: center;
-  margin: 5rem 15rem;
+  padding: 5rem 15rem;
 }
 
 .description {
@@ -31,6 +31,11 @@ body {
   font-weight: var(--text-font-weight);
   color: var(--text-color);
   line-height: 3rem;
+  margin-top: 2rem;
+
+  span {
+    display: block;
+  }
 }
 
 .laslessvpn {
@@ -74,7 +79,7 @@ body {
   margin-bottom: 0.5rem;
   // display: flex;
   // flex-direction: column;
-  // display: block;
+  display: block;
 
   span {
     display: block;
@@ -92,10 +97,18 @@ body {
   &-element {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2.36rem;
     font-size: var(--details-font-size);
     font-weight: var(--text-font-weight);
     line-height: 3rem;
     margin-bottom: 0.5rem;
+    color: var(--text-color);
   }
+}
+
+.side-title {
+  font-size: var(--special-title-font-size);
+  font-weight: var(--main-font-weight);
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
 }
