@@ -302,25 +302,27 @@ body {
   text-align: center;
 }
 .pricing-plans {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
 }
 .pricing-plans-plan {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 3rem;
   padding: 5rem 6.763rem;
   border: 0.2rem solid rgb(221, 221, 221);
   border-radius: var(--defult-radius);
+  transition: all 0.3s ease-in-out;
 }
 .pricing-plans-plan-selection {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  margin-top: auto;
 }
 .pricing-plans-plan-selection-button {
   color: var(--main-color);
@@ -330,4 +332,31 @@ body {
   font-weight: var(--extra-bold-font-weight);
   line-height: 100%;
   font-size: var(--description-font-size);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.pricing-plans-plan:hover {
+  border: 0.2rem solid rgb(245, 56, 56);
+}
+
+.pricing-plans-plan-selection-button:hover,
+.pricing-plans-plan-selection-button:active {
+  color: rgb(255, 255, 255);
+  background-color: rgb(245, 56, 56);
+}
+
+.pricing-plans-plan-selection-button:hover::after,
+.pricing-plans-plan-selection-button:active::after {
+  position: absolute;
+  content: "";
+  top: 52%;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 15rem;
+  height: 4rem;
+  background-color: rgba(245, 56, 56, 0.35);
+  border-radius: 1rem;
+  filter: blur(2.5rem);
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */
