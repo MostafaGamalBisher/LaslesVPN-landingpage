@@ -92,7 +92,11 @@ body {
   display: block;
 }
 
-.laslessvpn {
+.block {
+  display: block;
+}
+
+.laslesvpn {
   font-weight: var(--main-font-weight);
 }
 
