@@ -382,4 +382,30 @@ body {
   border-radius: 1rem;
   filter: blur(2.5rem);
   z-index: -1;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.testimonials .global-map {
+  margin: 13.5rem 0 3.51rem;
+}
+.testimonials-content-apps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-content-apps .netflix {
+  margin-right: 5.984rem;
+}
+.testimonials-content-apps .spotify {
+  margin-left: 5.984rem;
+}
+
+.second-title {
+  margin-top: 5rem;
 }/*# sourceMappingURL=main.css.map */
