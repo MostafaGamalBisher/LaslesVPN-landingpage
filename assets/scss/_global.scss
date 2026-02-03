@@ -31,7 +31,7 @@ body {
   font-weight: var(--text-font-weight);
   color: var(--text-color);
   line-height: 3rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .block {
@@ -79,7 +79,6 @@ body {
   margin-bottom: 0.5rem;
   // display: flex;
   // flex-direction: column;
-  display: block;
 }
 
 .list {

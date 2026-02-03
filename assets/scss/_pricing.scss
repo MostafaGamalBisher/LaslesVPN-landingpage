@@ -1,11 +1,12 @@
 .pricing {
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
-  gap: 6rem;
+  gap: 4rem;
   background: linear-gradient(rgba(248, 248, 248, 1), rgba(248, 248, 248, 0));
 
   &-content {
     text-align: center;
+    // gap: 2rem;
   }
 
   &-plans {

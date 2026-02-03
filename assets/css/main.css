@@ -86,7 +86,7 @@ body {
   font-weight: var(--text-font-weight);
   color: var(--text-color);
   line-height: 3rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .block {
@@ -132,7 +132,6 @@ body {
   font-weight: var(--main-font-weight);
   line-height: 5rem;
   margin-bottom: 0.5rem;
-  display: block;
 }
 
 .list {
@@ -296,19 +295,19 @@ body {
 .features {
   grid-template-columns: 60% 40%;
   align-items: end;
+  padding-bottom: 13.119rem;
 }
 .features-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem;
 }
 
 .pricing {
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
-  gap: 6rem;
+  gap: 4rem;
   background: linear-gradient(rgb(248, 248, 248), rgba(248, 248, 248, 0));
 }
 .pricing-content {
