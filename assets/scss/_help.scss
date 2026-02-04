@@ -1,0 +1,17 @@
+.help {
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  //   justify-items: center;
+  background-color: rgba(248, 248, 248, 1);
+
+  &-subscribe {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5.85rem 7rem;
+    // gap: 37rem;
+    background-color: var(--bold-button-text-color);
+    border-radius: var(--defult-radius);
+  }
+}

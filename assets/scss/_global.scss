@@ -42,6 +42,22 @@ body {
   font-weight: var(--main-font-weight);
 }
 
+.logo-content {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  &-name {
+    font-weight: var(--main-font-weight);
+    font-size: var(--analytics-font-size2);
+
+    &-vpn {
+      font-weight: var(--extra-bold-font-weight);
+    }
+  }
+}
+
 .image {
   max-width: 100%;
 }
@@ -56,6 +72,7 @@ body {
   font-size: var(--description-font-size);
   margin-top: 3rem;
   line-height: 2.5rem;
+  z-index: 1;
 }
 
 .button::after {

@@ -5,21 +5,7 @@
   gap: 15rem;
   margin: 5rem 15rem;
 
-  .logo-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-
-    &-name {
-      font-weight: var(--main-font-weight);
-      font-size: var(--analytics-font-size2);
-
-      &-vpn {
-        font-weight: var(--extra-bold-font-weight);
-      }
-    }
-  }
+  
 
   .links {
     display: flex;
