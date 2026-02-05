@@ -396,6 +396,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-bottom: 18.1rem;
 }
 .testimonials .global-map {
   margin: 13.5rem 0 3.51rem;
@@ -416,27 +417,15 @@ body {
   margin-top: 5rem;
 }
 
-.subscribe {
-  grid-column: 1/-1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 5.85rem 7rem;
-  background-color: var(--bold-button-text-color);
-  border-radius: var(--defult-radius);
-  box-shadow: 0 0rem 1rem -1rem rgb(13, 16, 37);
-}
-.subscribe-now {
-  text-align: left;
-}
-.subscribe-now .description {
-  margin: 0;
-}
-
 .help {
-  grid-template-columns: repeat(4, 1fr);
   background-color: rgb(248, 248, 248);
-  gap: 12.6rem;
+  padding-top: 0;
+}
+.help-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transform: translateY(-20%);
 }
 .help .list-element {
   font-size: var(--description-font-size);
@@ -478,4 +467,21 @@ body {
 }
 .footer-footer span {
   font-weight: var(--main-font-weight);
+}
+
+.subscribe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5.85rem 7rem;
+  background-color: var(--bold-button-text-color);
+  border-radius: var(--defult-radius);
+  box-shadow: 0 0rem 1rem -1rem rgb(13, 16, 37);
+  transform: translateY(-50%);
+}
+.subscribe-now {
+  text-align: left;
+}
+.subscribe-now .description {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
