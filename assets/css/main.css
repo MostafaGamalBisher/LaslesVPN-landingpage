@@ -298,6 +298,9 @@ body {
   align-items: end;
   padding-bottom: 13.119rem;
 }
+.features .list-element {
+  gap: 1.08rem;
+}
 .features-content {
   display: flex;
   flex-direction: column;
@@ -327,7 +330,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 3rem;
-  padding: 5rem 6.763rem;
+  padding: 7.963rem 6.987rem 5rem;
   border: 0.2rem solid rgb(221, 221, 221);
   border-radius: var(--defult-radius);
   transition: all 0.3s ease-in-out;
