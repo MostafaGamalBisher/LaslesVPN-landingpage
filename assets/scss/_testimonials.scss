@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-bottom: 18.1rem;
+  // padding-bottom: 18.1rem;
 
   .global-map {
     margin: 13.5rem 0 3.51rem;
@@ -26,4 +26,24 @@
 
 .second-title {
   margin-top: 5rem;
+}
+
+.subscribe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5.85rem 7rem;
+  // gap: 37rem;
+  background-color: var(--bold-button-text-color);
+  border-radius: var(--defult-radius);
+  box-shadow: 0 0rem 1rem -1rem rgba(13, 16, 37, 1);
+  transform: translateY(17.65rem);
+
+  &-now {
+    text-align: left;
+
+    .description {
+      margin: 0;
+    }
+  }
 }

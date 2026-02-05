@@ -34,10 +34,6 @@ body {
   margin: 2rem 0;
 }
 
-.description:last-child {
-  margin: 0;
-}
-
 .block {
   display: block;
 }
@@ -54,7 +50,7 @@ body {
 
   &-name {
     font-weight: var(--main-font-weight);
-    font-size: var(--analytics-font-size2);
+    font-size: var(--statistics-font-size2);
 
     &-vpn {
       font-weight: var(--extra-bold-font-weight);
