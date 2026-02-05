@@ -103,7 +103,7 @@ body {
   flex-direction: column;
   // align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   // text-align: center;
 
   &-element {
@@ -113,7 +113,7 @@ body {
     font-size: var(--details-font-size);
     font-weight: var(--text-font-weight);
     line-height: 3rem;
-    margin-bottom: 0.5rem;
+    // margin-bottom: 0.5rem;
     color: var(--text-color);
   }
 }

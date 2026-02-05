@@ -153,7 +153,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .list-element {
   display: flex;
@@ -162,7 +162,6 @@ body {
   font-size: var(--details-font-size);
   font-weight: var(--text-font-weight);
   line-height: 3rem;
-  margin-bottom: 0.5rem;
   color: var(--text-color);
 }
 
@@ -311,6 +310,8 @@ body {
   justify-items: center;
   gap: 4rem;
   background: linear-gradient(rgb(248, 248, 248), rgba(248, 248, 248, 0));
+  padding-top: 8.3rem;
+  padding-bottom: 10rem;
 }
 .pricing-content {
   text-align: center;
@@ -431,9 +432,19 @@ body {
 
 .help {
   display: flex;
-  align-content: center;
+  align-items: flex-start;
   background-color: rgb(248, 248, 248);
   padding-top: 18rem;
+  padding-bottom: 10rem;
+  gap: 12.6rem;
+}
+.help .list-element {
+  font-size: var(--description-font-size);
+}
+.help-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .footer {
@@ -441,6 +452,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin-right: 10.4rem;
 }
 .footer-socials {
   display: flex;
