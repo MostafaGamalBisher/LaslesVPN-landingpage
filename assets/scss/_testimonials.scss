@@ -29,6 +29,7 @@
 }
 
 .subscribe {
+  grid-column: 1/-1;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -37,7 +38,7 @@
   background-color: var(--bold-button-text-color);
   border-radius: var(--defult-radius);
   box-shadow: 0 0rem 1rem -1rem rgba(13, 16, 37, 1);
-  transform: translateY(17.65rem);
+  // transform: translateY(-17.65rem);
 
   &-now {
     text-align: left;
