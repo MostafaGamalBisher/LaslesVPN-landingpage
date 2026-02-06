@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="testimonials-slider">
+      <!-- Hidden Radio Buttons -->
+      <input type="radio" name="testimonial" id="testimonial-1" checked />
+      <input type="radio" name="testimonial" id="testimonial-2" />
+      <input type="radio" name="testimonial" id="testimonial-3" />
+
+      <!-- Navigation Arrows -->
+      <div class="slider-controls">
+        <label for="testimonial-1" class="arrow prev">❮</label>
+        <label for="testimonial-2" class="arrow prev">❮</label>
+        <label for="testimonial-3" class="arrow prev">❮</label>
+
+        <label for="testimonial-2" class="arrow next">❯</label>
+        <label for="testimonial-3" class="arrow next">❯</label>
+        <label for="testimonial-1" class="arrow next">❯</label>
+      </div>
+
+      <!-- Testimonial Cards -->
+      <div class="slider-container">
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img
+              src="./assets/image/user1.png"
+              alt="User 1"
+              class="user-photo"
+            />
+            <div class="user-info">
+              <h4>Viezh Robert</h4>
+              <p>Warsaw, Poland</p>
+            </div>
+            <div class="rating">
+              <span>4.5</span>
+              <span>⭐</span>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Wow... I am very happy to use this VPN, it turned out to be more
+            than my expectations and so far there have been no problems.
+            LaslesVPN always the best"
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img
+              src="./assets/image/user2.png"
+              alt="User 2"
+              class="user-photo"
+            />
+            <div class="user-info">
+              <h4>Yessica Christy</h4>
+              <p>Shanxi, China</p>
+            </div>
+            <div class="rating">
+              <span>4.5</span>
+              <span>⭐</span>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "I like it because I like to travel far and still can connect with
+            high speed. Thank you LaslesVPN!"
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img
+              src="./assets/image/user3.png"
+              alt="User 3"
+              class="user-photo"
+            />
+            <div class="user-info">
+              <h4>Kim Young Jou</h4>
+              <p>Seoul, South Korea</p>
+            </div>
+            <div class="rating">
+              <span>4.5</span>
+              <span>⭐</span>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "This is very unusual for my business that currently requires a
+            virtual private network that has high security."
+          </p>
+        </div>
+      </div>
+
+      <!-- Dots Navigation -->
+      <div class="slider-dots">
+        <label for="testimonial-1" class="dot"></label>
+        <label for="testimonial-2" class="dot"></label>
+        <label for="testimonial-3" class="dot"></label>
+      </div>
+    </div>
+  </body>
+</html>
