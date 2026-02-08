@@ -1,0 +1,13 @@
+.testimonials-slider {
+  width: 100%;
+}
+
+.slider-container {
+  display: flex;
+  gap: 5rem;
+
+  &-image {
+    border: 0.2rem solid #dddddd;
+    border-radius: var(--defult-radius);
+  }
+}

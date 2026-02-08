@@ -484,4 +484,17 @@ body {
 }
 .subscribe-now .description {
   margin: 0;
+}
+
+.testimonials-slider {
+  width: 100%;
+}
+
+.slider-container {
+  display: flex;
+  gap: 5rem;
+}
+.slider-container-image {
+  border: 0.2rem solid #dddddd;
+  border-radius: var(--defult-radius);
 }/*# sourceMappingURL=main.css.map */
