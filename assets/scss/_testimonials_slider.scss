@@ -1,5 +1,12 @@
 .testimonials-slider {
   width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 6rem 0;
+
+  input {
+    display: none;
+  }
 }
 
 .slider-container {
@@ -7,7 +14,16 @@
   gap: 5rem;
 
   &-image {
-    border: 0.2rem solid #dddddd;
+    border: 0.2rem solid var(--testimonials-cards-border-color);
     border-radius: var(--defult-radius);
   }
+}
+
+.arrow {
+  color: var(--main-color);
+  border-radius: 50%;
+  border: 0.2rem solid var(--main-color);
+  padding: 1rem 2.2rem;
+  font-weight: var(--extra-bold-font-weight);
+  font-size: var(--title-font-size);
 }

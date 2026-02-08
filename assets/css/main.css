@@ -39,6 +39,7 @@ a {
   --text-color: rgba(79, 86, 101, 1);
   --footer-color: rgba(175, 181, 192, 1);
   --bold-button-text-color: rgba(255, 255, 255, 1);
+  --testimonials-cards-border-color: #dddddd;
   --main-font-weight: 500;
   --text-font-weight: 400;
   --extra-bold-font-weight: 700;
@@ -488,6 +489,12 @@ body {
 
 .testimonials-slider {
   width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 6rem 0;
+}
+.testimonials-slider input {
+  display: none;
 }
 
 .slider-container {
@@ -495,6 +502,15 @@ body {
   gap: 5rem;
 }
 .slider-container-image {
-  border: 0.2rem solid #dddddd;
+  border: 0.2rem solid var(--testimonials-cards-border-color);
   border-radius: var(--defult-radius);
+}
+
+.arrow {
+  color: var(--main-color);
+  border-radius: 50%;
+  border: 0.2rem solid var(--main-color);
+  padding: 1rem 2.2rem;
+  font-weight: var(--extra-bold-font-weight);
+  font-size: var(--title-font-size);
 }/*# sourceMappingURL=main.css.map */
