@@ -518,6 +518,9 @@ body {
   font-size: var(--title-font-size);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .arrow:hover {
