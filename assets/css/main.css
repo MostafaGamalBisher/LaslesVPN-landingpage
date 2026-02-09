@@ -178,7 +178,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 15rem;
   margin: 5rem 15rem;
 }
 .header .links {
@@ -636,4 +635,58 @@ body {
   width: 4.5rem;
   background-color: var(--main-color);
   border-radius: 99.9rem;
+}
+
+@media (max-width: 1440px) {
+  .section {
+    padding: 5rem 5rem;
+  }
+}
+@media (max-width: 800px) {
+  .section {
+    padding: 5rem 5rem;
+  }
+  .description {
+    line-height: 1.5rem;
+    font-size: calc(var(--description-font-size) / 1.5);
+    margin: 0.5rem 0;
+  }
+  .logo-content {
+    gap: 0.5rem;
+  }
+  .logo-content .logo-content-icon {
+    height: 75%;
+  }
+  .logo-content-name {
+    font-size: calc(var(--statistics-font-size2) / 1.5);
+  }
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    margin: 2.5rem 7.5rem;
+    justify-items: center;
+    border-bottom: 0.1rem solid var(--text-color);
+  }
+  .header .links {
+    grid-column: 1/-1;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  .header .sign {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: calc(var(--description-font-size) / 1.5);
+  }
+  .header .sign-up {
+    padding: 0.5rem 2.5rem;
+  }
+  .about-content {
+    gap: 1rem;
+  }
+  .hero-title {
+    font-size: calc(var(--hero-title-font-size) / 2);
+    line-height: 3.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
