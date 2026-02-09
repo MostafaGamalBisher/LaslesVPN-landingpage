@@ -656,9 +656,37 @@ body {
   }
   .logo-content .logo-content-icon {
     height: 75%;
+    width: 75%;
   }
   .logo-content-name {
     font-size: calc(var(--statistics-font-size2) / 1.5);
+  }
+  .button {
+    padding: 1.1666666667rem 5.1666666667rem;
+    font-size: calc(var(--description-font-size) / 1.5);
+    line-height: 1.5rem;
+  }
+  .button::after {
+    width: 14.122rem;
+    height: 4rem;
+  }
+  .title {
+    font-size: calc(var(--title-font-size) / 1.5);
+    line-height: 3.3333333333rem;
+    margin-bottom: 0.3333333333rem;
+  }
+  .list {
+    gap: 0.6666666667rem;
+  }
+  .list-element {
+    gap: 1.5733333333rem;
+    font-size: calc(var(--details-font-size) / 1.5);
+    line-height: 2rem;
+  }
+  .side-title {
+    font-size: calc(var(--special-title-font-size) / 1.5);
+    line-height: 2rem;
+    margin-bottom: 0.3333333333rem;
   }
   .header {
     display: grid;
