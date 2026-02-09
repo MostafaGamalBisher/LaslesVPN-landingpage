@@ -54,6 +54,8 @@ a {
   --defult-radius: 1rem;
   --special-radius: 5rem;
   --font-family: "Rubik";
+  --line-height30: 3rem;
+  --line-height50: 5rem;
 }
 
 html {
