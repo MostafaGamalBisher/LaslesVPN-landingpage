@@ -97,4 +97,57 @@
     font-size: calc(var(--hero-title-font-size) / 2);
     line-height: 3.5rem;
   }
+
+  .statistics-container {
+    margin-top: calc(5rem / 1.5);
+    justify-self: center;
+  }
+
+  .Statistics {
+    padding: calc(7.25rem / 3) calc(9.1rem / 3);
+    gap: calc(24rem / 4);
+
+    &-column {
+      gap: calc(3.65rem / 1.5);
+
+      &-icon {
+        width: 75%;
+      }
+
+      &-content {
+        gap: 0.25rem;
+
+        &-numbers {
+          font-size: calc(var(--statistics-font-size1) / 1.5);
+          line-height: calc(3rem / 1.5);
+
+          &-name {
+            font-size: calc(var(--statistics-font-size2) / 1.5);
+          }
+        }
+      }
+    }
+  }
+
+  .Statistics-column:nth-child(2):before,
+  .Statistics-column:nth-child(2):after {
+    height: calc(12.557rem / 1.5);
+  }
+
+  .Statistics-column:nth-child(2)::before {
+    left: -2.533333rem;
+  }
+
+  .Statistics-column:nth-child(2)::after {
+    right: -3.45rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  ul li img {
+    width: 1rem;
+  }
 }

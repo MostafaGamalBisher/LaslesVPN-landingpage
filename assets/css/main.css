@@ -54,8 +54,6 @@ a {
   --defult-radius: 1rem;
   --special-radius: 5rem;
   --font-family: "Rubik";
-  --line-height30: 3rem;
-  --line-height50: 5rem;
 }
 
 html {
@@ -718,5 +716,46 @@ body {
   .hero-title {
     font-size: calc(var(--hero-title-font-size) / 2);
     line-height: 3.5rem;
+  }
+  .statistics-container {
+    margin-top: 3.3333333333rem;
+    justify-self: center;
+  }
+  .Statistics {
+    padding: 2.4166666667rem 3.0333333333rem;
+    gap: 6rem;
+  }
+  .Statistics-column {
+    gap: 2.4333333333rem;
+  }
+  .Statistics-column-icon {
+    width: 75%;
+  }
+  .Statistics-column-content {
+    gap: 0.25rem;
+  }
+  .Statistics-column-content-numbers {
+    font-size: calc(var(--statistics-font-size1) / 1.5);
+    line-height: 2rem;
+  }
+  .Statistics-column-content-numbers-name {
+    font-size: calc(var(--statistics-font-size2) / 1.5);
+  }
+  .Statistics-column:nth-child(2):before,
+  .Statistics-column:nth-child(2):after {
+    height: 8.3713333333rem;
+  }
+  .Statistics-column:nth-child(2)::before {
+    left: -2.533333rem;
+  }
+  .Statistics-column:nth-child(2)::after {
+    right: -3.45rem;
+  }
+  .features {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  ul li img {
+    width: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
