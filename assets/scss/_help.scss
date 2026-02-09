@@ -16,6 +16,10 @@
   }
   .list-element {
     font-size: var(--description-font-size);
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   &-list {

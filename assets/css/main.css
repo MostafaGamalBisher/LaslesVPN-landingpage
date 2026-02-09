@@ -40,6 +40,7 @@ a {
   --footer-color: rgba(175, 181, 192, 1);
   --bold-button-text-color: rgba(255, 255, 255, 1);
   --testimonials-cards-border-color: #dddddd;
+  --testimonials-dots-color: rgba(221, 224, 228, 1);
   --main-font-weight: 500;
   --text-font-weight: 400;
   --extra-bold-font-weight: 700;
@@ -431,6 +432,9 @@ body {
 .help .list-element {
   font-size: var(--description-font-size);
 }
+.help .list-element a:hover {
+  text-decoration: underline;
+}
 .help-list {
   display: flex;
   flex-direction: column;
@@ -491,7 +495,7 @@ body {
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 6rem 0;
+  padding: 4rem 0 6rem;
 }
 .testimonials-slider input {
   display: none;
@@ -500,30 +504,136 @@ body {
 .slider-container {
   display: flex;
   gap: 5rem;
+  margin-bottom: 8rem;
+  transition: all 0.3s ease-in-out;
 }
 .slider-container-image {
   border: 0.2rem solid var(--testimonials-cards-border-color);
   border-radius: var(--defult-radius);
+  transition: all 0.4s ease-in-out;
 }
 .slider-container-image:hover {
   border: 0.2rem solid var(--main-color);
+}
+
+.slider-controls {
+  position: absolute;
+  display: flex;
+  right: 0;
+  bottom: 4rem;
+  gap: 2rem;
 }
 
 .arrow {
   color: var(--main-color);
   border-radius: 50%;
   border: 0.2rem solid var(--main-color);
-  padding: 1rem 2.2rem;
   font-weight: var(--extra-bold-font-weight);
-  font-size: var(--title-font-size);
+  font-size: var(--statistics-font-size1);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  pointer-events: all;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "Inter", sans-serif;
 }
 
 .arrow:hover {
   background-color: var(--main-color);
   color: var(--bold-button-text-color);
+}
+
+.slider-controls label {
+  display: none;
+}
+
+.slider-dots {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.dot {
+  background-color: var(--testimonials-dots-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dot:hover,
+.dot:active,
+.dot:focus {
+  background-color: var(--main-color);
+}
+
+#testimonial-1:checked ~ .slider-container .slider-container-image:nth-of-type(1) {
+  order: 0;
+  border: 0.2rem solid var(--main-color);
+}
+
+#testimonial-1:checked ~ .slider-controls .forward:nth-of-type(7),
+#testimonial-1:checked ~ .slider-controls .back:nth-of-type(4) {
+  display: flex;
+}
+
+#testimonial-1:checked ~ .slider-dots .dot:nth-of-type(1) {
+  width: 4.5rem;
+  background-color: var(--main-color);
+  border-radius: 99.9rem;
+}
+
+#testimonial-2:checked ~ .slider-container .slider-container-image:nth-of-type(2) {
+  order: -1;
+  border: 0.2rem solid var(--main-color);
+}
+
+#testimonial-2:checked ~ .slider-controls .forward:nth-of-type(6),
+#testimonial-2:checked ~ .slider-controls .back:nth-of-type(1) {
+  display: flex;
+}
+
+#testimonial-2:checked ~ .slider-dots .dot:nth-of-type(2) {
+  width: 4.5rem;
+  background-color: var(--main-color);
+  border-radius: 99.9rem;
+}
+
+#testimonial-3:checked ~ .slider-container .slider-container-image:nth-of-type(3) {
+  order: -2;
+  border: 0.2rem solid var(--main-color);
+}
+
+#testimonial-3:checked ~ .slider-controls .forward:nth-of-type(5),
+#testimonial-3:checked ~ .slider-controls .back:nth-of-type(2) {
+  display: flex;
+}
+
+#testimonial-3:checked ~ .slider-dots .dot:nth-of-type(3) {
+  width: 4.5rem;
+  background-color: var(--main-color);
+  border-radius: 99.9rem;
+}
+
+#testimonial-4:checked ~ .slider-container .slider-container-image:nth-of-type(4) {
+  order: -3;
+  border: 0.2rem solid var(--main-color);
+}
+
+#testimonial-4:checked ~ .slider-controls .forward:nth-of-type(8),
+#testimonial-4:checked ~ .slider-controls .back:nth-of-type(3) {
+  display: flex;
+}
+
+#testimonial-4:checked ~ .slider-dots .dot:nth-of-type(4) {
+  width: 4.5rem;
+  background-color: var(--main-color);
+  border-radius: 99.9rem;
 }/*# sourceMappingURL=main.css.map */
