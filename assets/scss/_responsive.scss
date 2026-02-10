@@ -1,26 +1,67 @@
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   .section {
-    padding: 5rem 5rem;
+    padding: 3rem 5rem;
+  }
+
+  .header {
+    margin: 5rem 5rem;
+
+    .links {
+      gap: 3rem;
+    }
+  }
+
+  .hero-title {
+    font-size: calc(var(--hero-title-font-size) * 0.8);
+  }
+
+  .statistics-container {
+    justify-self: center;
+  }
+
+  .Statistics {
+    gap: 15rem;
+  }
+
+  .pricing {
+    &-plans {
+      gap: 3rem;
+
+      &-plan {
+        padding: 5.963rem 4.987rem 3rem;
+      }
+    }
+  }
+
+  .testimonials-content-apps img {
+    width: 15rem;
+  }
+
+  .testimonials {
+    padding-bottom: 10rem;
+  }
+
+  .subscribe {
+    padding: 4rem 6rem;
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 744px) and (max-width: 1024px) {
   .section {
-    padding: 5rem 5rem;
+    padding: 3rem 5rem;
   }
 
   .description {
-    line-height: 1.5rem;
-    font-size: calc(var(--description-font-size) / 1.5);
-    margin: 0.5rem 0;
+    line-height: 2rem;
+    font-size: calc(var(--description-font-size) / 1.2);
+    margin: 1rem 0;
   }
 
   .logo-content {
     gap: 0.5rem;
 
     .logo-content-icon {
-      height: 75%;
-      width: 75%;
+      width: 3rem;
     }
 
     &-name {
@@ -50,7 +91,7 @@
 
     &-element {
       gap: calc(2.36rem / 1.5);
-      font-size: calc(var(--details-font-size) / 1.5);
+      font-size: calc(var(--details-font-size) / 1.4);
       line-height: calc(3rem / 1.5);
     }
   }
@@ -62,25 +103,16 @@
   }
 
   .header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 2rem;
-    margin: 2.5rem 7.5rem;
-    justify-items: center;
-    border-bottom: 0.1rem solid var(--text-color);
+    margin: 3rem 5rem;
 
     .links {
-      grid-column: 1/-1;
-      text-align: center;
-      padding-bottom: 1rem;
-      font-size: 1.1rem;
+      font-size: 1.4rem;
+      gap: 1.5rem;
     }
 
     .sign {
-      grid-column: 2/3;
-      grid-row: 1/2;
       font-size: calc(var(--description-font-size) / 1.5);
-
+      gap: 1.5rem;
       &-up {
         padding: 0.5rem 2.5rem;
       }
@@ -186,6 +218,7 @@
   }
 
   .testimonials {
+    padding-bottom: 10rem;
     .global-map {
       margin: calc(13.5rem / 1.5) 0 calc(3.51rem / 1.5);
     }
