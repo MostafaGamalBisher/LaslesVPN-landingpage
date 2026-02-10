@@ -879,6 +879,7 @@ body {
   .header {
     margin: 1rem 2rem;
     gap: 2rem;
+    align-items: flex-start;
   }
   .header .links {
     display: none;
@@ -970,5 +971,57 @@ body {
   }
   .pricing-plans-plan-selection {
     grid-column: 1/-1;
+  }
+  .testimonials .global-map {
+    margin: 0rem 0 3rem;
+  }
+  .testimonials-content-apps img {
+    width: 7.4rem;
+  }
+  .testimonials-content-apps .netflix {
+    margin-right: 0;
+  }
+  .testimonials-content-apps .spotify {
+    margin-left: 0;
+  }
+  .slider-container-image {
+    width: 100%;
+  }
+  .subscribe {
+    transform: translateY(-25%);
+    padding: 2rem 1rem 4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe h2 {
+    font-size: 3rem;
+  }
+  .subscribe-now {
+    text-align: center;
+  }
+  .help-list {
+    align-items: flex-start;
+  }
+  .help-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-items: stretch;
+    transform: translateY(0);
+  }
+  .help-content .footer {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  .help-content ul {
+    text-align: left;
+  }
+  .help-content li a {
+    font-size: 1.2rem;
+  }
+  .footer {
+    text-align: center;
+    margin-right: 0;
+    margin-top: 3rem;
   }
 }/*# sourceMappingURL=main.css.map */
