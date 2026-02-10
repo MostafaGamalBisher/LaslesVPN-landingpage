@@ -94,22 +94,29 @@
       gap: 2rem;
 
       &-plan {
-        gap: 1.5rem;
-        padding: 1.5rem;
+        gap: 1rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        justify-items: center;
+        align-items: start;
 
         ul {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-column: 2/3;
+          grid-row: 1/4;
+          gap: 0;
 
           li {
-            gap: 1rem;
-            align-items: self-start;
-            text-align: start;
-
-            span {
-              display: block;
-            }
+            gap: 0.1rem;
           }
+        }
+
+        h3 {
+          order: -1;
+        }
+
+        &-selection {
+          grid-column: 1/-1;
         }
       }
     }

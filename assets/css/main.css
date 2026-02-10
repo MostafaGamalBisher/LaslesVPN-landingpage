@@ -950,19 +950,25 @@ body {
     gap: 2rem;
   }
   .pricing-plans-plan {
-    gap: 1.5rem;
-    padding: 1.5rem;
+    gap: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: center;
+    align-items: start;
   }
   .pricing-plans-plan ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-column: 2/3;
+    grid-row: 1/4;
+    gap: 0;
   }
   .pricing-plans-plan ul li {
-    gap: 1rem;
-    align-items: self-start;
-    text-align: start;
+    gap: 0.1rem;
   }
-  .pricing-plans-plan ul li span {
-    display: block;
+  .pricing-plans-plan h3 {
+    order: -1;
+  }
+  .pricing-plans-plan-selection {
+    grid-column: 1/-1;
   }
 }/*# sourceMappingURL=main.css.map */
