@@ -870,4 +870,99 @@ body {
   .footer-footer {
     font-size: calc(var(--details-font-size) / 1.5);
   }
+}
+@media (max-width: 743px) {
+  .section {
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+  .header {
+    margin: 1rem 2rem;
+    gap: 2rem;
+  }
+  .header .links {
+    display: none;
+  }
+  .header .sign {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .header .sign-up {
+    padding: 1rem 3rem;
+    order: -1;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-content {
+    align-items: center;
+  }
+  .about-image-content {
+    order: -1;
+  }
+  .statistics-container {
+    justify-self: center;
+    justify-items: center;
+    align-content: center;
+  }
+  .Statistics {
+    gap: 3rem;
+    padding: 3rem;
+  }
+  .Statistics-column {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .Statistics-column-icon {
+    order: -1;
+  }
+  .Statistics-column-content {
+    text-align: center;
+  }
+  .Statistics-column:nth-child(2)::before {
+    left: -0.9rem;
+  }
+  .Statistics-column:nth-child(2)::after {
+    right: -0.9rem;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .features-content {
+    align-items: center;
+  }
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .pricing-plans {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .pricing-plans-plan {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  .pricing-plans-plan ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing-plans-plan ul li {
+    gap: 1rem;
+    align-items: self-start;
+    text-align: start;
+  }
+  .pricing-plans-plan ul li span {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
