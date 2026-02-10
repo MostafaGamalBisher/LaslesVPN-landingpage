@@ -54,6 +54,8 @@ a {
   --defult-radius: 1rem;
   --special-radius: 5rem;
   --font-family: "Rubik";
+  --line-height30: 3rem;
+  --line-height50: 5rem;
 }
 
 html {
@@ -757,5 +759,42 @@ body {
   }
   ul li img {
     width: 1rem;
+  }
+  .pricing-plans {
+    gap: 2.5rem;
+  }
+  .pricing-plans-plan {
+    gap: 1.5rem;
+    padding: 3.9815rem 3.4935rem 2.5rem;
+  }
+  .pricing-plans-plan img {
+    width: 10rem;
+  }
+  .pricing-plans-plan li img {
+    width: 1rem;
+  }
+  .pricing-plans-plan-selection {
+    gap: 1rem;
+  }
+  .pricing-plans-plan-selection span {
+    line-height: 2rem;
+    font-size: calc(var(--statistics-font-size1) / 1.5);
+    margin-bottom: 0.25rem;
+  }
+  .pricing-plans-plan-selection-button {
+    font-size: calc(var(--description-font-size) / 1.5);
+    padding: 0.8666666667rem 4.196rem;
+  }
+  .testimonials .global-map {
+    margin: 9rem 0 2.34rem;
+  }
+  .testimonials-content-apps img {
+    width: 12rem;
+  }
+  .testimonials-content-apps .netflix {
+    margin-right: 3.9893333333rem;
+  }
+  .testimonials-content-apps .spotify {
+    margin-left: 3.9293333333rem;
   }
 }/*# sourceMappingURL=main.css.map */

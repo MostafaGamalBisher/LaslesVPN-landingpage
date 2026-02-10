@@ -150,4 +150,58 @@
   ul li img {
     width: 1rem;
   }
+
+  .pricing {
+    &-plans {
+      gap: calc(5rem / 2);
+
+      &-plan {
+        gap: calc(3rem / 2);
+        padding: calc(7.963rem / 2) calc(6.987rem / 2) calc(5rem / 2);
+
+        img {
+          width: 10rem;
+        }
+
+        li img {
+          width: 1rem;
+        }
+
+        &-selection {
+          gap: calc(2rem / 2);
+
+          span {
+            line-height: calc(3rem / 1.5);
+            font-size: calc(var(--statistics-font-size1) / 1.5);
+            margin-bottom: calc(0.5rem / 2);
+          }
+
+          &-button {
+            font-size: calc(var(--description-font-size) / 1.5);
+            padding: calc(1.3rem / 1.5) calc(6.294rem / 1.5);
+          }
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    .global-map {
+      margin: calc(13.5rem / 1.5) 0 calc(3.51rem / 1.5);
+    }
+
+    &-content-apps {
+      img {
+        width: 12rem;
+      }
+
+      .netflix {
+        margin-right: calc(5.984rem / 1.5);
+      }
+
+      .spotify {
+        margin-left: calc(5.894rem / 1.5);
+      }
+    }
+  }
 }
