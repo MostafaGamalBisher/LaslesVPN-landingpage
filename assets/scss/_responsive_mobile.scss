@@ -1,4 +1,4 @@
-@media (max-width: 478px) {
+@media (max-width: 500px) {
   .header {
     justify-content: space-between;
 
@@ -19,18 +19,45 @@
   }
 
   .header {
-    margin: 2rem 2rem;
-    gap: 1rem;
-    align-items: flex-start;
-    justify-content: space-between;
+    // margin: 2rem 2rem;
+    // gap: 1rem;
+    // align-items: flex-start;
+    // justify-content: flex-start;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    align-items: start;
+    margin: 2rem 1rem;
 
+    .burger-menu-logo-container {
+      display: flex;
+      gap: 1rem;
+    }
     .links {
-      display: none;
+      opacity: 0;
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      justify-self: center;
+      margin: 0;
+      gap: 1rem;
+      font-size: 1.3rem;
+      transition: all 0.3s ease-in-out;
+      pointer-events: none;
     }
 
+    #burger-menu:checked ~ .links {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #burger-menu:checked ~ .burger-menu-logo-container .burger-menu-container {
+      border-color: var(--main-color);
+      border-radius: 50%;
+    }
     .sign {
       gap: 1rem;
-      // margin-left: auto;
+      margin-left: auto;
 
       &-up {
         padding: 1rem 3rem;
@@ -47,6 +74,7 @@
       gap: 0.5rem;
       align-items: center;
       justify-content: center;
+      transition: all 0.3s ease-in-out;
     }
     .burger-menu-bar {
       width: 2rem;
