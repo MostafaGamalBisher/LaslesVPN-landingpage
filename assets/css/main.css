@@ -936,6 +936,9 @@ body {
     border-color: var(--main-color);
     border-radius: 50%;
   }
+  .header #burger-menu:checked ~ .burger-menu-logo-container .burger-menu-container .burger-menu-bar {
+    width: 1.5rem;
+  }
   .header .sign {
     gap: 1rem;
     margin-left: auto;
@@ -960,6 +963,7 @@ body {
     width: 2rem;
     height: 0.1rem;
     background-color: var(--footer-color);
+    transition: all 0.3s ease-in-out;
   }
   .about {
     display: flex;
