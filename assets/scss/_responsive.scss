@@ -5,9 +5,12 @@
 
   .header {
     margin: 5rem 5rem;
+    justify-content: center;
 
     .links {
       gap: 3rem;
+      margin-left: 8.5rem;
+      margin-right: 8.5rem;
     }
   }
 
@@ -46,7 +49,7 @@
   }
 }
 
-@media (min-width: 744px) and (max-width: 1024px) {
+@media (min-width: 746px) and (max-width: 1024px) {
   .section {
     padding: 3rem 5rem;
   }
@@ -108,6 +111,8 @@
     .links {
       font-size: 1.4rem;
       gap: 1.5rem;
+      margin-left: 5rem;
+      margin-right: 5rem;
     }
 
     .sign {

@@ -179,8 +179,11 @@ body {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 5rem 15rem;
+}
+.header input {
+  display: none;
 }
 .header .links {
   display: flex;
@@ -190,6 +193,11 @@ body {
   color: var(--text-color);
   font-weight: var(--text-font-weight);
   text-transform: capitalize;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+.header .links-link:hover {
+  text-decoration: underline;
 }
 .header .sign {
   display: flex;
@@ -210,6 +218,12 @@ body {
   padding: 1.3rem 4.5rem;
   border: 0.1rem solid var(--main-color);
   border-radius: var(--special-radius);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.header .sign-up:hover {
+  background-color: var(--main-color);
+  color: var(--bold-button-text-color);
 }
 
 .about {
@@ -645,9 +659,12 @@ body {
   }
   .header {
     margin: 5rem 5rem;
+    justify-content: center;
   }
   .header .links {
     gap: 3rem;
+    margin-left: 8.5rem;
+    margin-right: 8.5rem;
   }
   .hero-title {
     font-size: calc(var(--hero-title-font-size) * 0.8);
@@ -674,7 +691,7 @@ body {
     padding: 4rem 6rem;
   }
 }
-@media (min-width: 744px) and (max-width: 1024px) {
+@media (min-width: 746px) and (max-width: 1024px) {
   .section {
     padding: 3rem 5rem;
   }
@@ -725,6 +742,8 @@ body {
   .header .links {
     font-size: 1.4rem;
     gap: 1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
   .header .sign {
     font-size: calc(var(--description-font-size) / 1.5);
@@ -871,26 +890,53 @@ body {
     font-size: calc(var(--details-font-size) / 1.5);
   }
 }
-@media (max-width: 743px) {
+@media (max-width: 478px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header .sign {
+    flex-direction: column;
+  }
+  .header .sign-up {
+    order: -1;
+  }
+}
+@media (max-width: 745px) {
   .section {
     padding: 5rem 1rem;
     text-align: center;
   }
   .header {
-    margin: 1rem 2rem;
-    gap: 2rem;
+    margin: 2rem 2rem;
+    gap: 1rem;
     align-items: flex-start;
+    justify-content: space-between;
   }
   .header .links {
     display: none;
   }
   .header .sign {
     gap: 1rem;
-    flex-direction: column;
   }
   .header .sign-up {
     padding: 1rem 3rem;
-    order: -1;
+  }
+  .header .burger-menu-container {
+    margin-top: 0.5rem;
+    border: 0.1rem solid var(--footer-color);
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--defult-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .burger-menu-bar {
+    width: 2rem;
+    height: 0.1rem;
+    background-color: var(--footer-color);
   }
   .about {
     display: flex;
@@ -952,7 +998,7 @@ body {
   }
   .pricing-plans-plan {
     gap: 1rem;
-    padding: 1rem;
+    padding: 2rem 1rem;
     display: grid;
     grid-template-columns: 40% 60%;
     justify-items: center;
